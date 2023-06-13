@@ -6,8 +6,8 @@ def home(request):
 
 def usuarios(request):
     novoUsuario = Usuario()
-    novoUsuario.nome = request.POST.get('nome')
-    novoUsuario.idade = request.POST.get('idade')
+    novoUsuario.Nome = request.POST.get('nome')
+    novoUsuario.Idade = request.POST.get('idade')
     novoUsuario.save()
 
     usuarios = {
