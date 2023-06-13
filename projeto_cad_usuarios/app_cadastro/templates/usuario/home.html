@@ -21,11 +21,11 @@
         </div>
     </nav>
 
-    <form action="{% url 'listagemUsuarios' %}">
+    <form action="{% url 'listagemUsuarios' %}" method="post">
         <div style="text-align: center;" class="container">
             <h1>Cadastro de Usuários</h1>
-            Nome: <input class="form-control-sm" type="text">
-            Idade: <input class="form-control-sm" type="text">
+            Nome: <input name="nome" class="form-control-sm" type="text">
+            Idade: <input name="idade" class="form-control-sm" type="text">
             <button class="form-control-sm">Enviar</button>
         </div>
     </form>
